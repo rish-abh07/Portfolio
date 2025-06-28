@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>%PRODUCT_NAME%</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="unityContainer"></div>
+  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+  <script>
+    createUnityInstance(document.querySelector("#unityContainer"), {
+      dataUrl: "%UNITY_WEBGL_DATA_URL%",
+      frameworkUrl: "%UNITY_WEBGL_FRAMEWORK_URL%",
+      codeUrl: "%UNITY_WEBGL_CODE_URL%",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "%COMPANY_NAME%",
+      productName: "%PRODUCT_NAME%",
+      productVersion: "%PRODUCT_VERSION%"
+    });
+  </script>
+</body>
+</html>
