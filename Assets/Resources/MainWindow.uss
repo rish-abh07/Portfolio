@@ -1,0 +1,41 @@
+.visualElement {
+    max-width: initial;
+    max-height: initial;
+    min-width: initial;
+    min-height: initial;
+    justify-content: center;
+    background-color: rgb(11, 23, 32);
+}
+
+.block {
+    top: 85%;
+    color: rgba(24, 220, 251, 0.99);
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgba(35, 211, 239, 0);
+    border-left-color: rgb(35, 211, 239);
+    border-right-color: rgb(35, 211, 239);
+    border-top-color: rgb(35, 211, 239);
+    border-bottom-color: rgb(35, 211, 239);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    height: 30px;
+    width: 20%;
+    -unity-text-align: upper-center;
+    align-self: center;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+    -unity-font: url('project://database/Assets/montserrat/Montserrat-Regular.otf?fileID=12800000&guid=ed7fe642c9b013645bf245a39e238f3e&type=3#Montserrat-Regular');
+    align-self: flex-start;
+    -unity-text-align: upper-left;
+    left: 6%;
+    align-items: flex-start;
+}
