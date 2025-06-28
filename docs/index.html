@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>%PRODUCT_NAME%</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Rishabh's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
 </head>
 <body>
-  <div id="unityContainer"></div>
-  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+  <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+
+  <script src="Build/docs.loader.js"></script>
   <script>
-    createUnityInstance(document.querySelector("#unityContainer"), {
-      dataUrl: "%UNITY_WEBGL_DATA_URL%",
-      frameworkUrl: "%UNITY_WEBGL_FRAMEWORK_URL%",
-      codeUrl: "%UNITY_WEBGL_CODE_URL%",
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build/docs.data",
+      frameworkUrl: "Build/docs.framework.js",
+      codeUrl: "Build/docs.wasm",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "%COMPANY_NAME%",
-      productName: "%PRODUCT_NAME%",
-      productVersion: "%PRODUCT_VERSION%"
+      companyName: "DefaultCompany",
+      productName: "Rishabh's Portfolio",
+      productVersion: "0.1.0"
     });
   </script>
 </body>
